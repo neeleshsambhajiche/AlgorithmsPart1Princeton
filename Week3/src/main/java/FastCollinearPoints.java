@@ -57,7 +57,7 @@ public class FastCollinearPoints {
 
             int k = 1;
             while (k < N) {
-                LinkedList<Point> currentPossibleSeg = new LinkedList<>();
+                LinkedList<Point> currentPossibleSeg = new LinkedList<Point>();
                 double refSlope = currPoint.slopeTo(sortedBySlope[k]);
                 do {
                     currentPossibleSeg.add(sortedBySlope[k++]);
